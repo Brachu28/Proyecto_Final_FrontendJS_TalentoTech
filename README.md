@@ -38,7 +38,7 @@ Consiste en una tienda e-commerce especializada en **indumentaria urbana**, desa
 ## 🌐 Hosting
 
 Accede al sitio en GitHub Pages:  
-🔗 
+🔗 https://brachu28.github.io/Proyecto_Final_FrontendJS_TalentoTech/
 
 ---
 
