@@ -1,0 +1,363 @@
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--gray);
+}
+
+
+.featured-products {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.product-card {
+    border: 1px solid var(--gray);
+    padding: 15px;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--white);
+}
+
+.product-card .img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 200px;
+}
+
+.product-card .img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.product-card .description-container {
+    flex: 1;
+    text-align: center;
+}
+
+.product-card .description-container h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: var(--white);
+}
+
+.product-card .description-container p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: var(--light-gray);
+    height: 60px;
+    overflow: hidden;
+}
+
+.product-card .description-container span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white);
+    margin: 10px 0;
+}
+
+.kart-options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.kart-options-container button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kart-options-container input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid var(--gray);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.kart-btn-container {
+    margin-top: 10px;
+}
+
+.kart-btn-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kart-btn-container button:hover {
+    background-color: var(--light-gray);
+}
+
+
+.pagination-container {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination-container button {
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pagination-container button:disabled {
+    background-color: var(--gray);
+    cursor: not-allowed;
+}
+
+.pagination-container button:hover:not(:disabled) {
+    background-color: var(--light-gray);
+}
+
+.pagination-container input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid var(--gray);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid var(--gray);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gray);
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.kart-data-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.kart-item-container {
+    display: flex;
+    border: 1px solid var(--gray);
+    padding: 10px;
+    align-items: center;
+}
+
+.kart-item-img-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.kart-item-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.kart-item-description {
+    flex: 1;
+}
+
+.kart-item-description span {
+    font-weight: bold;
+    color: var(--white);
+}
+
+.kart-item-price,
+.kart-item-quantity,
+.kart-item-subtotal {
+    width: 100px;
+    text-align: center;
+    color: var(--white);
+}
+
+.kart-total-amount-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--gray);
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.kart-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.kart-btn-container button {
+    padding: 12px 25px;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.loading, .empty-kart {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    color: var(--light-gray);
+    grid-column: 1 / -1;
+}
+
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .grid-products {
+        grid-template-columns: 1fr;
+    }
+    
+    .pagination-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .kart-item-container {
+        flex-wrap: wrap;
+    }
+    
+    .kart-item-img-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .kart-item-description,
+    .kart-item-price,
+    .kart-item-quantity,
+    .kart-item-subtotal {
+        width: 100%;
+        text-align: left;
+        padding: 5px 0;
+    }
+    
+    .kart-btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .kart-btn-container button {
+        width: 100%;
+    }
+}

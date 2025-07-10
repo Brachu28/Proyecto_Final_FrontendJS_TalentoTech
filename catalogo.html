@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Bragu</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-large-container">
+                <a href="./index.html">
+                    <img src="./img/LOGO.jpg" alt="Logo Bragu" class="logo-large">
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./carrito.html">Carrito</a></li>
+                </ul>
+            </nav>
+            
+            <div class="kart-container">
+                <a href="./carrito.html">
+                    <img src="./img/carrito.jpg" alt="Carrito de compras">
+                    <span id="kart-count"></span>
+                </a>
+            </div>
+            
+            <button class="burger-btn">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <h1>Productos Bragu</h1>
+        <div class="grid-products" id="products-grid">
+            
+        </div>
+        
+        <div class="pagination-container">
+            <button id="prev-page" class="pagination-btn">Anterior</button>
+            <input id="page-input" type="text" value="1" disabled>
+            <button id="next-page" class="pagination-btn">Siguiente</button>
+        </div>
+    </main>
+
+  <footer>
+        <div class="footer-items-container">
+            <a href="https://www.instagram.com/_bragu/">
+                <img src="./img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@_bragu">
+                <img src="./img/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+        <p>Resiliencia hecha estilo © 2024 - Bragu</p>
+    </footer>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/products.js"></script>
+</body>
+</html>
